@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <LoadingScreen />
       <CustomCursor />
-      <main className="relative bg-slate-950 min-h-screen text-slate-100 selection:bg-blue-500/30 overflow-hidden">
+      <main className="relative bg-background text-foreground bg-mesh min-h-screen selection:bg-blue-500/30 overflow-hidden">
         <Navbar />
         <Hero />
         <div className="container mx-auto px-4 py-12 space-y-40">

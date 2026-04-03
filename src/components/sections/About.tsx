@@ -4,17 +4,17 @@ import { motion } from "framer-motion";
 
 export function About() {
   return (
-    <section id="about" className="scroll-mt-32 max-w-4xl mx-auto text-center py-20">
+    <section id="about" className="scroll-mt-32 max-w-4xl mx-auto text-center py-20 px-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="text-3xl md:text-5xl font-bold font-heading mb-8">
-          Crafting <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">digital experiences</span> that convert.
+        <h2 className="text-3xl md:text-5xl font-bold font-heading mb-8 text-foreground leading-tight">
+          Crafting <span className="text-gradient">digital experiences</span> that convert.
         </h2>
-        <p className="text-slate-300 text-lg md:text-2xl leading-relaxed font-light">
+        <p className="text-muted-foreground text-lg md:text-2xl leading-relaxed font-light">
           I create premium digital products with a strong focus on usability, clean design, and scalable frontend development. My work combines modern UI aesthetics with real-world product thinking.
         </p>
       </motion.div>

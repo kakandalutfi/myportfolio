@@ -37,7 +37,7 @@ export function Navbar() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled
-          ? "glass py-3 border-b border-white/10"
+          ? "glass py-3 border-b border-border"
           : "bg-transparent py-5"
       )}
     >
@@ -52,14 +52,14 @@ export function Navbar() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm font-medium hover:text-primary transition-colors"
+              className="text-sm font-medium hover:text-blue-500 transition-colors"
             >
               {item.name}
             </Link>
           ))}
           <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="p-2 rounded-full hover:bg-white/10 transition-colors"
+            className="p-2 rounded-full hover:bg-accent transition-colors"
           >
             {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
           </button>
@@ -69,7 +69,7 @@ export function Navbar() {
         <div className="flex items-center space-x-4 md:hidden">
           <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="p-2 rounded-full hover:bg-white/10 transition-colors"
+            className="p-2 rounded-full hover:bg-accent transition-colors"
           >
             {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
           </button>
@@ -89,7 +89,7 @@ export function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden glass border-b border-white/10 overflow-hidden"
+            className="md:hidden glass border-b border-border overflow-hidden"
           >
             <div className="flex flex-col space-y-4 p-6">
               {navItems.map((item) => (
@@ -97,7 +97,7 @@ export function Navbar() {
                   key={item.name}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-lg font-medium hover:text-primary transition-colors"
+                  className="text-lg font-medium hover:text-blue-500 transition-colors"
                 >
                   {item.name}
                 </Link>
