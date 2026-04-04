@@ -15,9 +15,8 @@ const features = [
 ];
 
 const techStack = [
-  { name: "Landing Page", bg: "bg-purple-500/10", text: "text-purple-600 dark:text-purple-400", border: "border-purple-500/20" },
-  { name: "React.js", bg: "bg-blue-500/10", text: "text-blue-600 dark:text-blue-400", border: "border-blue-500/20" },
-  { name: "Tailwind CSS", bg: "bg-cyan-500/10", text: "text-cyan-600 dark:text-cyan-400", border: "border-cyan-500/20" }
+  { name: "React.js", bg: "bg-purple-500/10", text: "text-purple-600 dark:text-purple-400", border: "border-purple-500/20" },
+  { name: "Tailwind Css", bg: "bg-blue-500/10", text: "text-blue-600 dark:text-blue-400", border: "border-blue-500/20" },
 ];
 
 export function ProductDetail() {
