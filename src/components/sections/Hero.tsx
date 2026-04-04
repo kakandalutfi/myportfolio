@@ -14,7 +14,7 @@ export function Hero() {
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-indigo-500/10 rounded-full blur-[100px] opacity-30 dark:opacity-10" />
       </div>
 
-      <div className="container mx-auto px-6 relative z-10 flex flex-col lg:flex-row items-center gap-12 pt-10">
+      <div className="container mx-auto px-6 relative z-10 flex flex-col lg:flex-row items-center gap-8 md:gap-12 pt-6 md:pt-10">
         <div className="flex-1 text-center lg:text-left max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -30,7 +30,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold font-heading mb-6 tracking-tight leading-[1.1] text-foreground"
+            className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold font-heading mb-4 md:mb-6 tracking-tight leading-[1.2] md:leading-[1.1] text-foreground"
           >
             Crafting <span className="text-gradient">Digital Excellence</span> for the Future.
           </motion.h1>
@@ -39,7 +39,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-muted-foreground text-lg md:text-xl mb-10 leading-relaxed max-w-2xl mx-auto lg:mx-0"
+            className="text-muted-foreground text-base md:text-xl mb-8 md:mb-10 leading-relaxed max-w-2xl mx-auto lg:mx-0"
           >
             Empowering brands with high-end digital products, premium UI kits, and cutting-edge web experiences that convert.
           </motion.p>
@@ -48,17 +48,17 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="flex flex-wrap gap-4 justify-center lg:justify-start"
+            className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start w-full sm:w-auto"
           >
             <Link 
               href="#products"
-              className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-semibold transition-all shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:-translate-y-1"
+              className="px-8 py-3.5 md:py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-semibold transition-all shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:-translate-y-1 text-center"
             >
               Explore Products
             </Link>
             <Link 
               href="#contact"
-              className="px-8 py-4 bg-transparent border border-border hover:bg-accent rounded-full font-semibold transition-all text-foreground"
+              className="px-8 py-3.5 md:py-4 bg-transparent border border-border hover:bg-accent rounded-full font-semibold transition-all text-foreground text-center"
             >
               Get in Touch
             </Link>
@@ -69,7 +69,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="flex-1 relative w-full aspect-[4/3] lg:aspect-square max-w-2xl mx-auto flex items-center justify-center"
+          className="flex-1 relative w-full aspect-square max-w-xl mx-auto flex items-center justify-center mt-8 lg:mt-0"
         >
           {/* Decorative halo */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-blue-500/10 blur-[120px] rounded-full z-0 animate-pulse" />
@@ -92,7 +92,7 @@ export function Hero() {
             initial={{ x: 20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="absolute bottom-20 -left-6 md:-left-12 p-4 glass border border-border rounded-2xl shadow-2xl flex items-center gap-4 z-20"
+            className="absolute bottom-10 md:bottom-20 -left-2 md:-left-12 p-3 md:p-4 glass border border-border rounded-xl md:rounded-2xl shadow-2xl flex items-center gap-3 md:gap-4 z-20"
           >
             <div className="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-600 dark:text-blue-400">
                <span className="font-bold text-xs">UI8</span>

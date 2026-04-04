@@ -37,12 +37,12 @@ export function Navbar() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled
-          ? "glass py-3 border-b border-border"
-          : "bg-transparent py-5"
+          ? "glass py-2.5 md:py-3 border-b border-border"
+          : "bg-transparent py-4 md:py-5"
       )}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold font-heading tracking-tighter text-gradient">
+        <Link href="/" className="text-xl md:text-2xl font-bold font-heading tracking-tighter text-gradient">
           PORTFOLIO.
         </Link>
 
@@ -65,19 +65,18 @@ export function Navbar() {
           </button>
         </nav>
 
-        {/* Mobile Toggle */}
         <div className="flex items-center space-x-4 md:hidden">
           <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="p-2 rounded-full hover:bg-accent transition-colors"
+            className="p-1.5 rounded-full hover:bg-accent transition-colors"
           >
-            {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
+            {theme === "dark" ? <Sun size={18} className="md:w-5 md:h-5" /> : <Moon size={18} className="md:w-5 md:h-5" />}
           </button>
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="p-2 text-foreground"
+            className="p-1.5 text-foreground"
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <X size={22} className="md:w-6 md:h-6" /> : <Menu size={22} className="md:w-6 md:h-6" />}
           </button>
         </div>
       </div>

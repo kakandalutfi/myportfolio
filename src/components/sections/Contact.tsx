@@ -24,8 +24,8 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="scroll-mt-32 max-w-7xl mx-auto px-6 py-20">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+    <section id="contact" className="scroll-mt-32 max-w-7xl mx-auto px-6 py-12 md:py-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
         {/* Left: Contact Info */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -33,41 +33,41 @@ export function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold font-heading mb-6 tracking-tight text-foreground">
+          <h2 className="text-3xl md:text-5xl font-bold font-heading mb-4 md:mb-6 tracking-tight text-foreground">
             Let's <span className="text-gradient">Collaborate</span> Now.
           </h2>
-          <p className="text-muted-foreground mb-10 text-lg leading-relaxed max-w-md">
+          <p className="text-muted-foreground mb-8 md:mb-10 text-base md:text-lg leading-relaxed max-w-md">
             Interested in high-end digital products or custom web development? Feel free to reach out for inquiries or collaborations.
           </p>
 
           <div className="space-y-8">
-            <div className="flex items-center gap-6 group">
-              <div className="w-14 h-14 rounded-2xl bg-blue-500/10 flex items-center justify-center text-blue-600 dark:text-blue-400 border border-blue-500/20 group-hover:scale-110 transition-transform">
-                <Mail size={24} />
+            <div className="flex items-center gap-4 md:gap-6 group">
+              <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-blue-500/10 flex items-center justify-center text-blue-600 dark:text-blue-400 border border-blue-500/20 group-hover:scale-110 transition-transform">
+                <Mail size={20} className="md:w-6 md:h-6" />
               </div>
               <div>
-                <p className="text-sm font-bold text-muted-foreground/60 uppercase tracking-widest mb-1">Email</p>
-                <p className="font-semibold text-foreground">m.lutfihabibunnazar@gmail.com</p>
+                <p className="text-[10px] md:text-sm font-bold text-muted-foreground/60 uppercase tracking-widest mb-0.5 md:mb-1">Email</p>
+                <p className="text-sm md:text-base font-semibold text-foreground">m.lutfihabibunnazar@gmail.com</p>
               </div>
             </div>
 
-            <div className="flex items-center gap-6 group">
-              <div className="w-14 h-14 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-600 dark:text-indigo-400 border border-indigo-500/20 group-hover:scale-110 transition-transform">
-                <Phone size={24} />
+            <div className="flex items-center gap-4 md:gap-6 group">
+              <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-600 dark:text-indigo-400 border border-indigo-500/20 group-hover:scale-110 transition-transform">
+                <Phone size={20} className="md:w-6 md:h-6" />
               </div>
               <div>
-                <p className="text-sm font-bold text-muted-foreground/60 uppercase tracking-widest mb-1">WhatsApp</p>
-                <p className="font-semibold text-foreground">+6288221481972</p>
+                <p className="text-[10px] md:text-sm font-bold text-muted-foreground/60 uppercase tracking-widest mb-0.5 md:mb-1">WhatsApp</p>
+                <p className="text-sm md:text-base font-semibold text-foreground">+6288221481972</p>
               </div>
             </div>
 
-            <div className="flex items-center gap-6 group">
-              <div className="w-14 h-14 rounded-2xl bg-purple-500/10 flex items-center justify-center text-purple-600 dark:text-purple-400 border border-purple-500/20 group-hover:scale-110 transition-transform">
-                <MapPin size={24} />
+            <div className="flex items-center gap-4 md:gap-6 group">
+              <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-purple-500/10 flex items-center justify-center text-purple-600 dark:text-purple-400 border border-purple-500/20 group-hover:scale-110 transition-transform">
+                <MapPin size={20} className="md:w-6 md:h-6" />
               </div>
               <div>
-                <p className="text-sm font-bold text-muted-foreground/60 uppercase tracking-widest mb-1">Location</p>
-                <p className="font-semibold text-foreground">Grobogan, Indonesia</p>
+                <p className="text-[10px] md:text-sm font-bold text-muted-foreground/60 uppercase tracking-widest mb-0.5 md:mb-1">Location</p>
+                <p className="text-sm md:text-base font-semibold text-foreground">Grobogan, Indonesia</p>
               </div>
             </div>
           </div>
@@ -76,9 +76,9 @@ export function Contact() {
             {[Github, Linkedin, Instagram].map((Icon, i) => (
               <button
                 key={i}
-                className="p-4 glass rounded-2xl border border-border bg-card/40 text-blue-600 dark:text-blue-400 hover:bg-blue-500/10 hover:text-blue-700 dark:hover:text-blue-300 hover:border-blue-500/30 transition-all duration-300"
+                className="p-3.5 md:p-4 glass rounded-xl md:rounded-2xl border border-border bg-card/40 text-blue-600 dark:text-blue-400 hover:bg-blue-500/10 hover:text-blue-700 dark:hover:text-blue-300 hover:border-blue-500/30 transition-all duration-300"
               >
-                <Icon size={20} />
+                <Icon size={18} className="md:w-5 md:h-5" />
               </button>
             ))}
           </div>
@@ -95,7 +95,7 @@ export function Contact() {
           {/* Decorative mesh */}
           <div className="absolute -top-10 -right-10 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl opacity-50 dark:opacity-20" />
 
-          <div className="glass p-10 rounded-[2.5rem] border border-border bg-card/40 shadow-2xl relative overflow-hidden">
+          <div className="glass p-6 md:p-10 rounded-[1.5rem] md:rounded-[2.5rem] border border-border bg-card/40 shadow-2xl relative overflow-hidden">
             <form className="space-y-6 relative z-10">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">

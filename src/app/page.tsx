@@ -17,7 +17,7 @@ export default function Home() {
       <main className="relative bg-background text-foreground bg-mesh min-h-screen selection:bg-blue-500/30 overflow-hidden">
         <Navbar />
         <Hero />
-        <div className="container mx-auto px-4 py-12 space-y-40">
+        <div className="container mx-auto px-4 py-8 md:py-12 space-y-24 md:space-y-40">
           <About />
           <FeaturedProducts />
           <ProductDetail />

@@ -22,13 +22,13 @@ const techStack = [
 
 export function ProductDetail() {
   return (
-    <section id="product-detail" className="scroll-mt-32 max-w-7xl mx-auto px-6 py-20">
-      <div className="glass rounded-[3rem] p-8 md:p-12 lg:p-16 border border-border shadow-2xl relative overflow-hidden bg-card/40">
+    <section id="product-detail" className="scroll-mt-32 max-w-7xl mx-auto px-6 py-12 md:py-20">
+      <div className="glass rounded-[2.5rem] md:rounded-[3rem] p-6 md:p-12 lg:p-16 border border-border shadow-2xl relative overflow-hidden bg-card/40">
         
         {/* Decorative background element */}
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-500/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3" />
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center relative z-10">
           
           {/* Left: Product Info */}
           <motion.div
@@ -38,17 +38,17 @@ export function ProductDetail() {
             transition={{ duration: 0.6 }}
           >
             
-            <h2 className="text-3xl md:text-5xl font-bold font-heading mb-6 tracking-tight leading-tight text-foreground">
-              Company Profile <br/>
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold font-heading mb-4 md:mb-6 tracking-tight leading-tight text-foreground">
+              Company Profile <br className="hidden md:block"/>
               <span className="text-gradient">Landing Page Template </span>
             </h2>
             
-            <p className="text-muted-foreground text-lg mb-10 leading-relaxed max-w-xl">
+            <p className="text-muted-foreground text-base md:text-lg mb-8 md:mb-10 leading-relaxed max-w-xl">
               A comprehensive digital solution platform for building modern websites, business systems, and SaaS experiences. Designed specifically to support business growth through creative digital services, innovative technology, and professional online presence.
             </p>
 
-            <div className="space-y-6 mb-12">
-              <h3 className="text-xl font-semibold text-foreground">Premium Benefits</h3>
+            <div className="space-y-4 md:space-y-6 mb-10 md:mb-12">
+              <h3 className="text-lg md:text-xl font-semibold text-foreground">Premium Benefits</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {features.map((feature, i) => (
                   <div key={i} className="flex items-center gap-3">
@@ -59,13 +59,13 @@ export function ProductDetail() {
               </div>
             </div>
 
-            <div className="space-y-4">
-              <h3 className="text-sm font-bold tracking-widest uppercase text-muted-foreground/60">Tech Stack</h3>
-              <div className="flex flex-wrap gap-3">
+            <div className="space-y-3 md:space-y-4">
+              <h3 className="text-[11px] md:text-sm font-bold tracking-widest uppercase text-muted-foreground/60">Tech Stack</h3>
+              <div className="flex flex-wrap gap-2 md:gap-3">
                 {techStack.map((tech) => (
                   <span 
                     key={tech.name} 
-                    className={cn("px-4 py-2 rounded-full text-sm font-semibold border", tech.bg, tech.text, tech.border)}
+                    className={cn("px-3 py-1.5 md:px-4 md:py-2 rounded-full text-[11px] md:text-sm font-semibold border", tech.bg, tech.text, tech.border)}
                   >
                     {tech.name}
                   </span>
@@ -82,7 +82,7 @@ export function ProductDetail() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="relative w-full aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl border border-border">
+            <div className="relative w-full aspect-[4/5] rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden shadow-2xl border border-border">
               <Image 
                 src="/digintara_landingpage.png"
                 alt="Local Business Landing Page Details"
